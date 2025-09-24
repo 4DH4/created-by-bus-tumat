@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Jadwal Poliklinik — RS H. Damanhuri Barabai</title>
+  <style>
+    :root {
+      --bg:#f4f7fb; --card:#fff; --accent:#0d6efd;
+    }
+    body {
+      font-family: system-ui, Segoe UI, Roboto, Arial;
+      background: var(--bg);
+      margin:0; padding:0;
+      color:#1f2937;
+    }
+    nav {
+      background:linear-gradient(90deg,var(--accent),#063a7a);
+      color:#fff; padding:14px 20px;
+      display:flex; justify-content:space-between; align-items:center;
+      flex-wrap:wrap;
+    }
+    nav h1 {
+      font-size:1.2rem; margin:0;
+    }
+    nav span {
+      font-size:0.95rem; opacity:0.9;
+    }
+    main {
+      padding:20px;
+      display:grid; grid-template-columns:1fr 1fr; gap:20px;
+    }
+    .card {
+      background:var(--card);
+      border-radius:12px;
+      padding:16px;
+      box-shadow:0 6px 18px rgba(8,20,50,0.06);
+    }
+    h2 {
+      margin:0 0 12px 0;
+      font-size:1.05rem; color:#0b3a66;
+    }
+    table {
+      width:100%; border-collapse:collapse; font-size:0.9rem;
+    }
+    th, td {
+      border:1px solid #e6eefc; padding:8px; text-align:left; vertical-align:top;
+    }
+    th {
+      background:#f1f6ff; color:#0b3a66; font-weight:600;
+    }
+    tbody tr:nth-child(even) {
+      background:#fbfdff;
+    }
+    .table-wrapper {
+      max-height:500px; overflow:auto;
+      border:1px solid #eef6ff; border-radius:6px; padding:6px; background:#fff;
+    }
+    footer {
+      margin-top:20px; text-align:center; padding:15px;
+      background:#f9fafb; color:#6b7280; font-size:0.85rem;
+    }
+    @media (max-width:900px) {
+      main { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>RS H. Damanhuri Barabai</h1>
+    <span>Jadwal Pelayanan Poliklinik</span>
+  </nav>
+  <main>
+    
+    <div class="card">
+      <h2>Jadwal Poli Pagi</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Poli</th><th>Hari</th><th>Jam</th><th>Dokter</th><th>Keterangan</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    
+    
+    <div class="card">
+      <h2>Jadwal Poli Sore</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead><tr><th>Poli</th><th>Hari</th><th>Jam</th><th>Dokter</th><th>Keterangan</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    
+  </main>
+  <footer>
+    © RS H. Damanhuri Barabai — Jadwal Poli
+  </footer>
+</body>
+</html>
